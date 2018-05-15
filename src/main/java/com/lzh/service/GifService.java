@@ -64,7 +64,7 @@ public class GifService {
             mx.put("sentences" + i, list.get(i));
         }
         root.put("mx", mx);
-        Template temp = cfg.getTemplate("template.ftl");
+        Template temp = cfg.getTemplate("template.ass");
         try (FileWriter writer = new FileWriter(path.toFile())) {
             temp.process(root, writer);
         } catch (Exception e) {

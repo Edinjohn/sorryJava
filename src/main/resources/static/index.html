@@ -173,7 +173,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab-pane" id="panel-3">
+<!--					<div class="tab-pane" id="panel-3">
 						<div class="row">
 							<div class="col-md-6">
 								<img class="center-block img-responsive" alt="大师兄" src="http://p5m79jjxo.bkt.clouddn.com/dashixiong.jpg">
@@ -255,7 +255,7 @@
 								</form>
 							</div>
 						</div>
-					</div>
+					</div>-->
 					<div class="tab-pane" id="panel-4">
 						<div class="row">
 							<div class="col-md-6">
@@ -356,7 +356,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<p>
-				<div class="alert alert-success" role="alert">请自行保存，服务器仅保存10分钟，可以关注微信平台sorrygif，新模板推出会通知哦</div>
+				<div class="alert alert-success" role="alert">请自行保存，服务器仅保存10分钟</div>
 				<img class="center-block img-responsive" src="http://p5m79jjxo.bkt.clouddn.com/gcode.jpg">
 			</p>
 		</div>
@@ -401,11 +401,11 @@
 			all.push(e.value)
 		})
         if (!ischange){
-            alert("生成成功！欢迎扫码关注公众号！");
-            $('#download').attr('href', "http://p5m79jjxo.bkt.clouddn.com/"+template+".gif");
-            $btn.button('reset')
-            $('#render').prop('disabled', false);
-            $('#downloadbtn').removeClass('hidden')
+            alert("生成成功！");
+            // $('#download').attr('href', "http://p5m79jjxo.bkt.clouddn.com/"+template+".gif");
+            // $btn.button('reset')
+            // $('#render').prop('disabled', false);
+            // $('#downloadbtn').removeClass('hidden')
             return;
 		}
 
@@ -430,7 +430,7 @@
 //				$('#result').attr('src', 'http://p5m79jjxo.bkt.clouddn.com/money.jpg');
 			}
 		}).error(function (jqxhr, textStatus, errorThrown) {
-			alert("服务器爆掉了，请稍后再试！赞赏给作者点鼓励吧。");
+			alert("服务器爆掉了，请稍后再试！");
 //			$('#result').attr('src', 'http://p5m79jjxo.bkt.clouddn.com/money.jpg');
 		}).complete(function () {
 			$btn.button('reset')
